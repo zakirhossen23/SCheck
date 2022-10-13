@@ -887,10 +887,6 @@ video {
   display: inline-flex;
 }
 
-.contents {
-  display: contents;
-}
-
 .hidden {
   display: none;
 }
@@ -1316,10 +1312,6 @@ video {
 
 .border-4 {
   border-width: 4px;
-}
-
-.border-t-4 {
-  border-top-width: 4px;
 }
 
 .border-solid {
