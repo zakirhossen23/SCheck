@@ -225,7 +225,7 @@ export default function CreateCertification() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h6>Images</h6>
+            <h6>Images and Document</h6>
             <div className="flex gap-4">
               <input
                 className="file-input"
@@ -276,7 +276,7 @@ export default function CreateCertification() {
                     size="lg"
                   >
                     <GenericPicture className="text-moon-24" />
-                    Add image
+                    Add image or document
                   </Button>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import NavLink from "next/link";
 import { Button } from "@heathmont/moon-core-tw";
 import { SoftwareLogOut } from "@heathmont/moon-icons-tw";
 import "../../../services/contract";
+import isServer from "../../../components/isServer";
 
 declare let window: any;
 
@@ -10,7 +11,7 @@ export function Nav(): JSX.Element {
   const [acc, setAcc] = useState('');
   const [accfull, setAccFull] = useState('');
   const [Balance, setBalance] = useState("");
-
+ 
   const [isSigned, setSigned] = useState(false);
   async function fetchInfo() {
     if (window.ethereum == null) {
@@ -54,7 +55,7 @@ export function Nav(): JSX.Element {
     window.localStorage.setItem("Type", "");
     window.location.href = "/";
   }
-
+  if (isServer()) return <></>;
   return (
     <nav className="main-nav w-full flex justify-between items-center">
       <ul className="flex justify-between items-center w-full">
